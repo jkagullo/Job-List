@@ -1,0 +1,108 @@
+.job-card {
+    background-color: #1e1e1e; /* Darker card background */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.job-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.job-card p {
+    margin: 5px 0;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+.job-card a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: 500;
+    word-wrap: break-word; /* Breaks long links into the next line */
+    overflow-wrap: break-word; /* Adds support for modern browsers */
+    display: inline-block; /* Ensures proper alignment */
+    max-width: 100%; /* Restricts link width to fit the card */
+}
+
+.job-card a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Truncate link text if needed */
+.job-card a.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 100%; /* Adjust as necessary */
+}
+
+
+.job-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-button {
+    background-color: #64b5f6; /* Light blue */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #42a5f5;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #f44336; /* Red button */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.edit-form input {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #1a1a1a; /* Input background */
+    color: #e0e0e0;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-form input:focus {
+    outline: none;
+    border-color: #64b5f6;
+    background-color: #333;
+    box-shadow: 0 0 6px rgba(100, 181, 246, 0.8);
+}
