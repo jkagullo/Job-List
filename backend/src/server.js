@@ -5,7 +5,7 @@ import cors from 'cors';
 import jobRoutes from './routes/jobRoutes.js';
 
 dotenv.config(); // initialize dotenv file
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 connectDb(); // connect to MongoDB Atlas
 
