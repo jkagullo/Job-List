@@ -1,7 +1,7 @@
 // filepath: /d:/practicejs/job-list-app/frontend/src/App.jsx
 import React from 'react';
 import JobPage from './pages/JobPage';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 
 function App() {
     return (
