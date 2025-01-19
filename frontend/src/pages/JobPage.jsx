@@ -3,7 +3,7 @@ import axios from 'axios';
 import Job from '../components/Job';
 import '../JobPage.css';
 
-const dbUrl = 'https://job-list-uk79.onrender.com';
+const dbUrl = 'https://job-list-uk79.onrender.com/api/jobs';
 
 const JobPage = () => {
     const [jobs, setJobs] = useState([]);
